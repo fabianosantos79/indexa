@@ -9,11 +9,12 @@ import { Contato } from './interfaces';
 
 import agenda from "./agenda.json";
 import { FormsModule } from '@angular/forms';
+import { FormularioContatoComponent } from "./pages/formulario-contato/formulario-contato.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ContainerComponent, CabecalhoComponent, SeparadorComponent, ContatoComponent, FormsModule],
+  imports: [CommonModule, RouterOutlet, ContainerComponent, CabecalhoComponent, SeparadorComponent, ContatoComponent, FormsModule, FormularioContatoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
