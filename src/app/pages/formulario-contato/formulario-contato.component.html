@@ -2,6 +2,12 @@
   <header>
     <section class="cabecalho-link">
       <img src="assets/logo.png" alt="" />
+      <div>
+        <button routerLink="/lista-contatos">
+          <img class="seta" src="assets/arrow-left.png" alt="" />
+          <a routerLink="/lista-contatos">Voltar</a>
+        </button>
+      </div>
     </section>
     <section class="cabecalho-contato">
       <img src="assets/adicionar-contato.png" alt="" />
@@ -79,12 +85,16 @@
       formControlName="observacoes"
     ></textarea>
     <section class="botoes">
-      <button class="botao-cancelar" type="button" (mouseover)="cancelarForm()">
+      <button class="botao-cancelar" type="button" (click)="cancelarForm()">
         Cancelar
       </button>
       <button
-      [disabled]="contatoForm.invalid"
-      [ngClass] = "contatoForm.valid ? 'botao-salvar' : 'botao-desabilitado'" type="submit">Salvar contato</button>
+        [disabled]="contatoForm.invalid"
+        [ngClass]="contatoForm.valid ? 'botao-salvar' : 'botao-desabilitado'"
+        type="submit"
+      >
+        Salvar contato
+      </button>
     </section>
   </form>
 </app-container>
