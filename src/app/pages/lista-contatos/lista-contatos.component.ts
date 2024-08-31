@@ -9,12 +9,13 @@ import { CabecalhoComponent } from "../../components/cabecalho/cabecalho.compone
 import { SeparadorComponent } from "../../components/separador/separador.component";
 import { ContatoComponent } from "../../components/contato/contato.component";
 import { Contato } from "../../components/contato/contato";
+import { PerfilContatoComponent } from "../perfil-contato/perfil-contato.component";
 
 
 @Component({
   selector: 'app-lista-contatos',
   standalone: true,
-  imports: [ContainerComponent, CabecalhoComponent, SeparadorComponent, ContatoComponent, CommonModule, FormsModule, RouterLink],
+  imports: [ContainerComponent, CabecalhoComponent, SeparadorComponent, ContatoComponent, CommonModule, FormsModule, RouterLink, PerfilContatoComponent],
   templateUrl: './lista-contatos.component.html',
   styleUrl: './lista-contatos.component.css'
 })

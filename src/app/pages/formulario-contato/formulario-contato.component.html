@@ -15,6 +15,11 @@
     </section>
   </header>
   <form [formGroup]="contatoForm" (ngSubmit)="enviarForm()">
+    <div role="button" class="imagem-contato">
+      <i class="material-icons">add</i>
+      <label for="avatar">Adicione a imagem do contatos</label>
+      <input type="file" accept="image/*" id="avatar" required />
+    </div>
     <label for="nome">Nome</label>
     <input
       type="text"
